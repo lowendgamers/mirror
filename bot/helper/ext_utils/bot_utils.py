@@ -13,13 +13,13 @@ URL_REGEX = r"(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+"
  
  
 class MirrorStatus:
-    STATUS_UPLOADING = "बस हो गया...⬆️"
-    STATUS_DOWNLOADING = "होने वाला है...⬇️"
-    STATUS_WAITING = "धक्का मुक्की नहीं...📝"
-    STATUS_FAILED = "धत तेरी माँ की चूत"
+    STATUS_UPLOADING = "Appurōdo...⬆️"
+    STATUS_DOWNLOADING = "Daunrōdo...⬇️"
+    STATUS_WAITING = "Kyū ni haire raremashita...📝"
+    STATUS_FAILED = "Shippai shimashita"
     STATUS_CANCELLED = "Cancelled ❎"
-    STATUS_ARCHIVING = "बंद करने दे भाई...🔐"
-    STATUS_EXTRACTING = "खोल रहा भाई...📂"
+    STATUS_ARCHIVING = "Ākaibu...🔐"
+    STATUS_EXTRACTING = "Chūshutsu...📂"
  
  
 PROGRESS_MAX_SIZE = 100 // 8
@@ -90,7 +90,7 @@ def get_progress_bar_string(status):
  
 def get_readable_message():
     with download_dict_lock:
-        msg = "<b>✥════ @mikiadarsh25 ════✥</b>"
+        msg = "<b>✥════ @anime_channel_am ════✥</b>"
         for download in list(download_dict.values()):
             msg += f"\n📁 𝗙𝗶𝗹𝗲𝗡𝗮𝗺𝗲: <code>{download.name()}</code>"
             msg += f"\n {download.status()}"
