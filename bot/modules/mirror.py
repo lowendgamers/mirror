@@ -147,7 +147,7 @@ class MirrorListener(listeners.MirrorListeners):
                   f'✥════ @anime_channel_am ════✥.\n' \
                   f'\n' \
                   f'Join our Channel @anime_channel_am.\n' \
-.\                f'Join our Group  @AnimeMatrixChat.\n'
+                  f'Join Our Group @AnimeMatrixChat.\n'
             buttons = button_build.ButtonMaker()
             if SHORTENER is not None and SHORTENER_API is not None:
                 surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, link)).text
